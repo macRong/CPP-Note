@@ -179,13 +179,49 @@ void funcB5()
     // a = 20, b= 20, *p =20
 }
 
+// 证明引用的本质是指针  看汇编指令是一样的
+void funcB6()
+{
+    /* 指针
+        int age = 5;
+        int *p = &age;
+        *p = 6;
+     */
+
+    /* 引用
+        int age = 5;
+        int &p = age;
+        p = 6;
+     */
+    
+    /**
+     
+     0x10000127f <+15>: leaq   -0x14(%rbp), %rax
+     0x100001283 <+19>: movl   $0x5, -0x14(%rbp)
+     0x10000128a <+26>: movq   %rax, -0x20(%rbp)
+     0x10000128e <+30>: movq   -0x20(%rbp), %rax
+     0x100001292 <+34>: movl   $0x6, (%rax)
+     ->  0x100001298 <+40>: movq   -0x20(%rbp), %rax
+     
+     
+     0x10000127f <+15>: leaq   -0x14(%rbp), %rax
+     0x100001283 <+19>: movl   $0x5, -0x14(%rbp)
+     0x10000128a <+26>: movq   %rax, -0x20(%rbp)
+     0x10000128e <+30>: movq   -0x20(%rbp), %rax
+     0x100001292 <+34>: movl   $0x6, (%rax)
+     ->  0x100001298 <+40>: movq   -0x20(%rbp), %rax
+     
+     */
+}
+
 void funcB()
 {
 //    funcB1();
 //    funcB2();
-    funcB3();
-    funcB4();
-    funcB5();
+//    funcB3();
+//    funcB4();
+//    funcB5();
+      funcB6();
 }
 
 

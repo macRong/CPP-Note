@@ -68,11 +68,57 @@ void func3()
  int &rAge = age; // age
  int &rAge1 = rAge; // age
  
+ 
+ 
+ // 1. 可以修改。但是没有意义，函数调用完直接回收
+ int &func()
+ {
+    int a = 10;
+    return a;
+ }
+ 
+ fun() = 30;
+ 
+ 
+ // 2. 可以修改全局的
+ int age = 20;
+ int &fun()
+ {
+    return a;
+ }
+ 
+ func() = 30; // age =30;
+ 
+ 
+ // 3.直接拿引用交换
+ void swap(int &a, int &b)
+ {
+    int temp = a;
+    a = b;
+    b = temp;
+ }
+ 
+ int a = 20;
+ int b = 30;
+ swap(a,b);
  */
+
+
+void swap(int &a, int &b)
+{
+    int temp = a;
+    a = b;
+    b = temp;
+}
 
 
 int main(int argc, const char * argv[])
 {
-    func2();
+    int a = 20;
+    int b = 30;
+    swap(a,b);
+    cout << "a=" << a << "\nb=" << b << endl;
+
+    
     return 0;
 }

@@ -84,15 +84,16 @@ void funcA()
 void funcB()
 {
     Person person;
-    person.m_id = 10;
-    person.m_age = 20;
-    person.m_height = 30;
+    person.m_id = 10;  // 0x004
+    person.m_age = 20;  // 0x008
+    person.m_height = 30; // 0x00b
     
-    Person *pPerson = (Person *)&person.m_age;
-    pPerson -> m_id = 40;
-    pPerson -> m_age = 50;
     
-    person.run(); // 10, 40 ,50
+    Person *pPerson = (Person *)&person.m_age;  // pPerson的首地址是person.m_age的地址0x008
+    pPerson -> m_id = 40;  // 第一个成员变量地址   0x008
+    pPerson -> m_age = 50; // 第一个成员变量地址+4 0x00b
+
+    pPerson->run(); // 10, 40 ,50
 }
 
 

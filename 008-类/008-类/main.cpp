@@ -88,7 +88,7 @@ void funcB()
     person.m_age = 20;  // 0x008
     person.m_height = 30; // 0x00b
     
-    
+    // int *p = &person.m_age;  下面是强转 编译用
     Person *pPerson = (Person *)&person.m_age;  // pPerson的首地址是person.m_age的地址0x008
     pPerson -> m_id = 40;  // 第一个成员变量地址   0x008
     pPerson -> m_age = 50; // 第一个成员变量地址+4 0x00b

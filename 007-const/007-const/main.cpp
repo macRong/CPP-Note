@@ -20,6 +20,7 @@ using namespace  std;
  4. const 可以指向不同类型赋值  funcB4()
  5. const 作为函数引用参数时 （参数可以接受const，或者非const） funcB5()
  6. const 作为函数引用（或指针）参数时 可以构成函数重载   void funA(int a);  void funA(const int a);
+ 7. const 指向不同类型的变量会产生临时变量  int age = 29;  const long &rAge = age;     funcB8();
  */
 
 void funcA1()
@@ -214,6 +215,48 @@ void funcB6()
      */
 }
 
+void funcB7()
+{
+    int age = 29;
+    const int &rAge = age; // 常引用， rAge指向的是age的地址，age地址内容改了， rAge在去取age地址内容也一样变了
+    age = 30;
+    
+    /**
+     
+     0x1000011f4 <+4>:  leaq   -0x4(%rbp), %rax
+     0x1000011f8 <+8>:  movl   $0x1d, -0x4(%rbp)  //  -0x4(%rbp) = 29
+     0x1000011ff <+15>: movq   %rax, -0x10(%rbp)  //  rAge = -0x4(%rbp)    (rAge = -0x10(%rbp))
+     0x100001203 <+19>: movl   $0x1e, -0x4(%rbp)  // -0x4(%rbp) = 30
+     
+     */
+    
+//    cout << "age=" << age << endl;  // 30
+//    cout << "rAge=" << rAge << endl; // 30
+}
+
+//  const 指向不同类型的变量会产生临时变量
+void funcB8()
+{
+    int age = 29;
+    const long &rAge = age;
+    age = 30;
+    
+    
+    /**
+     
+     0x1000012a4 <+4>:  leaq   -0x18(%rbp), %rax
+     0x1000012a8 <+8>:  movl   $0x1d, -0x4(%rbp)  //  a = -0x4(%rbp)
+     0x1000012af <+15>: movslq -0x4(%rbp), %rcx
+     0x1000012b3 <+19>: movq   %rcx, -0x18(%rbp)  //  rAge = -0x18(%rbp)
+     0x1000012b7 <+23>: movq   %rax, -0x10(%rbp)
+     0x1000012bb <+27>: movl   $0x1e, -0x4(%rbp)  // a = 30  而-0x18(%rbp) 并没有改变
+     
+     */
+    
+    cout << "age=" << age << endl; // 30
+    cout << "rAge=" << rAge << endl; // 29
+}
+
 void funcB()
 {
 //    funcB1();
@@ -221,7 +264,9 @@ void funcB()
 //    funcB3();
 //    funcB4();
 //    funcB5();
-      funcB6();
+//    funcB6();
+      funcB7();
+//    funcB8();
 }
 
 

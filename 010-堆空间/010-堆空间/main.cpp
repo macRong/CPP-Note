@@ -12,10 +12,17 @@ using namespace std;
 /**
  1. c++: malloc/free
  
- 2. c: new/delete
+ 2. c: new/delete  new里面有一些封装上的操作
  
- 
+
  */
+
+struct Person {
+    int m_age;
+    int m_id;
+    int m_height;
+};
+
 void funcA1()
 {
     // 申请4个字节堆空间内容
@@ -106,6 +113,28 @@ void funcA6()
     int *p8 = new int[3]{5,6,7};
 
     cout << p1 << p2 << p3 << p4 << p5 << p6 << p7 << p8 << endl;
+}
+
+// memset 使用场景 1
+void funcA7()
+{
+    Person person;
+    person.m_id = 1;
+    person.m_age = 2;
+    person.m_height = 3;
+    
+    // 如果想要person的每个成员变量都清0
+    // 取首地址
+    memset(&person, 0, sizeof(person));
+}
+
+// memset 使用场景 1
+void funcA8()
+{
+    // 数组里面有三个Person对象
+    Person persons[] = {{1,2,3},{4,5,6},{7,8,9}};
+    
+    memset(persons, 0, sizeof(persons));
 }
 
 int main(int argc, const char * argv[])

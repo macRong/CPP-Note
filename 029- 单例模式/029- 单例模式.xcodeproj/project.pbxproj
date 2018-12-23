@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04B55F0021CF39DF00AB9BE8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04B55EFF21CF39DF00AB9BE8 /* main.cpp */; };
-		04B55F0821CF42E400AB9BE8 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04B55F0621CF42E400AB9BE8 /* Person.cpp */; };
+		04B55F1621CF4AE200AB9BE8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04B55F1521CF4AE200AB9BE8 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		04B55EFA21CF39DF00AB9BE8 /* CopyFiles */ = {
+		04B55F1021CF4AE200AB9BE8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,14 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		04B55EFC21CF39DF00AB9BE8 /* 028-静态成员 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "028-静态成员"; sourceTree = BUILT_PRODUCTS_DIR; };
-		04B55EFF21CF39DF00AB9BE8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		04B55F0621CF42E400AB9BE8 /* Person.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Person.cpp; sourceTree = "<group>"; };
-		04B55F0721CF42E400AB9BE8 /* Person.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Person.hpp; sourceTree = "<group>"; };
+		04B55F1221CF4AE200AB9BE8 /* 029- 单例模式 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "029- 单例模式"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B55F1521CF4AE200AB9BE8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		04B55EF921CF39DF00AB9BE8 /* Frameworks */ = {
+		04B55F0F21CF4AE200AB9BE8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,97 +38,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04B55EF321CF39DF00AB9BE8 = {
+		04B55F0921CF4AE200AB9BE8 = {
 			isa = PBXGroup;
 			children = (
-				04B55EFE21CF39DF00AB9BE8 /* 028-静态成员 */,
-				04B55EFD21CF39DF00AB9BE8 /* Products */,
+				04B55F1421CF4AE200AB9BE8 /* 029- 单例模式 */,
+				04B55F1321CF4AE200AB9BE8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		04B55EFD21CF39DF00AB9BE8 /* Products */ = {
+		04B55F1321CF4AE200AB9BE8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				04B55EFC21CF39DF00AB9BE8 /* 028-静态成员 */,
+				04B55F1221CF4AE200AB9BE8 /* 029- 单例模式 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		04B55EFE21CF39DF00AB9BE8 /* 028-静态成员 */ = {
+		04B55F1421CF4AE200AB9BE8 /* 029- 单例模式 */ = {
 			isa = PBXGroup;
 			children = (
-				04B55EFF21CF39DF00AB9BE8 /* main.cpp */,
-				04B55F0621CF42E400AB9BE8 /* Person.cpp */,
-				04B55F0721CF42E400AB9BE8 /* Person.hpp */,
+				04B55F1521CF4AE200AB9BE8 /* main.cpp */,
 			);
-			path = "028-静态成员";
+			path = "029- 单例模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		04B55EFB21CF39DF00AB9BE8 /* 028-静态成员 */ = {
+		04B55F1121CF4AE200AB9BE8 /* 029- 单例模式 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04B55F0321CF39DF00AB9BE8 /* Build configuration list for PBXNativeTarget "028-静态成员" */;
+			buildConfigurationList = 04B55F1921CF4AE200AB9BE8 /* Build configuration list for PBXNativeTarget "029- 单例模式" */;
 			buildPhases = (
-				04B55EF821CF39DF00AB9BE8 /* Sources */,
-				04B55EF921CF39DF00AB9BE8 /* Frameworks */,
-				04B55EFA21CF39DF00AB9BE8 /* CopyFiles */,
+				04B55F0E21CF4AE200AB9BE8 /* Sources */,
+				04B55F0F21CF4AE200AB9BE8 /* Frameworks */,
+				04B55F1021CF4AE200AB9BE8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "028-静态成员";
-			productName = "028-静态成员";
-			productReference = 04B55EFC21CF39DF00AB9BE8 /* 028-静态成员 */;
+			name = "029- 单例模式";
+			productName = "029- 单例模式";
+			productReference = 04B55F1221CF4AE200AB9BE8 /* 029- 单例模式 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		04B55EF421CF39DF00AB9BE8 /* Project object */ = {
+		04B55F0A21CF4AE200AB9BE8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = mac;
 				TargetAttributes = {
-					04B55EFB21CF39DF00AB9BE8 = {
+					04B55F1121CF4AE200AB9BE8 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 04B55EF721CF39DF00AB9BE8 /* Build configuration list for PBXProject "028-静态成员" */;
+			buildConfigurationList = 04B55F0D21CF4AE200AB9BE8 /* Build configuration list for PBXProject "029- 单例模式" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 04B55EF321CF39DF00AB9BE8;
-			productRefGroup = 04B55EFD21CF39DF00AB9BE8 /* Products */;
+			mainGroup = 04B55F0921CF4AE200AB9BE8;
+			productRefGroup = 04B55F1321CF4AE200AB9BE8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				04B55EFB21CF39DF00AB9BE8 /* 028-静态成员 */,
+				04B55F1121CF4AE200AB9BE8 /* 029- 单例模式 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		04B55EF821CF39DF00AB9BE8 /* Sources */ = {
+		04B55F0E21CF4AE200AB9BE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04B55F0821CF42E400AB9BE8 /* Person.cpp in Sources */,
-				04B55F0021CF39DF00AB9BE8 /* main.cpp in Sources */,
+				04B55F1621CF4AE200AB9BE8 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		04B55F0121CF39DF00AB9BE8 /* Debug */ = {
+		04B55F1721CF4AE200AB9BE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -190,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		04B55F0221CF39DF00AB9BE8 /* Release */ = {
+		04B55F1821CF4AE200AB9BE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -242,7 +236,7 @@
 			};
 			name = Release;
 		};
-		04B55F0421CF39DF00AB9BE8 /* Debug */ = {
+		04B55F1A21CF4AE200AB9BE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -250,7 +244,7 @@
 			};
 			name = Debug;
 		};
-		04B55F0521CF39DF00AB9BE8 /* Release */ = {
+		04B55F1B21CF4AE200AB9BE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -261,25 +255,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		04B55EF721CF39DF00AB9BE8 /* Build configuration list for PBXProject "028-静态成员" */ = {
+		04B55F0D21CF4AE200AB9BE8 /* Build configuration list for PBXProject "029- 单例模式" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				04B55F0121CF39DF00AB9BE8 /* Debug */,
-				04B55F0221CF39DF00AB9BE8 /* Release */,
+				04B55F1721CF4AE200AB9BE8 /* Debug */,
+				04B55F1821CF4AE200AB9BE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04B55F0321CF39DF00AB9BE8 /* Build configuration list for PBXNativeTarget "028-静态成员" */ = {
+		04B55F1921CF4AE200AB9BE8 /* Build configuration list for PBXNativeTarget "029- 单例模式" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				04B55F0421CF39DF00AB9BE8 /* Debug */,
-				04B55F0521CF39DF00AB9BE8 /* Release */,
+				04B55F1A21CF4AE200AB9BE8 /* Debug */,
+				04B55F1B21CF4AE200AB9BE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 04B55EF421CF39DF00AB9BE8 /* Project object */;
+	rootObject = 04B55F0A21CF4AE200AB9BE8 /* Project object */;
 }

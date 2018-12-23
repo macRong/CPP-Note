@@ -59,6 +59,8 @@ using namespace std;
  
  
  2. 所有的同一个对象（new Dog()）公用一个虚表,也就是每个类一个虚表
+ 3. 如果子类没有重写父类的虚函数， 子类中虚表就是存的父类的虚函数
+ 4. 每个类都有自己的虚表，虚表不存在继承
  
  */
 
@@ -90,6 +92,9 @@ public:
     
     void sleep()
     {
+        // 相当于super.sleep()
+        Animal::sleep();
+        
         cout << "Dog::sleep()" << endl;
     }
 };

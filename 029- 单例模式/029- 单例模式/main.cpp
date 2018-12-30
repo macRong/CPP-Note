@@ -115,6 +115,7 @@ int main(int argc, const char * argv[])
     
     cout << Cat::m_age << endl;
     cout << Aniaml::m_age << endl;
+    
 
     return 0;
 }

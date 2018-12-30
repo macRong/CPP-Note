@@ -15,22 +15,38 @@ using namespace std;
 
 class String
 {
-    
     // friend 和public private没关系  权限没关系 放哪都行
-    friend ostream &operator<<(ostream &cout, const String *cstring);
+    friend ostream &operator<<(ostream &cout, const String &cstring);
 
 public:
-    char *m_string;
-    
-    String(const char *cstring);
+    // =”“ 创建出来是空字符串
+    String(const char *cstring = "");
     String(const String &cstring);  // copy构造
     ~String();
     
     String &operator=(const char *cstring);
     String &operator=(const String &cstring);
     
+    String operator+(const char *cstring);  // "123"
+    String operator+(const String &cstring); // String str = "123"
+
+    String &operator+=(const char *cstring);
+    String &operator+=(const String &cstring);
+    
+    char operator[](int index);
+    
+    bool operator>(const char *cstring);
+    bool operator>(const String &cstring);
+    
+
+    
+private:
+    // 为了安全 乱删错空间
+    char *m_string = NULL;
+    
     // 源码写法
     String &assign(const char *cstring);
+    char *join(const char *cstring1, const char *cstring2);
 };
 
 

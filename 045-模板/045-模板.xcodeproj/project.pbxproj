@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04B5607C21D8DD7400AB9BE8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04B5607B21D8DD7400AB9BE8 /* main.cpp */; };
+		04687C1921D9EECD00028F9C /* Swap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04687C1721D9EECD00028F9C /* Swap.cpp */; };
+		04E74E5C21D90B42006E7067 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E74E5B21D90B42006E7067 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		04B5607621D8DD7400AB9BE8 /* CopyFiles */ = {
+		04E74E5621D90B42006E7067 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,14 +24,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		04B5607821D8DD7400AB9BE8 /* 044-仿函数 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "044-仿函数"; sourceTree = BUILT_PRODUCTS_DIR; };
-		04B5607B21D8DD7400AB9BE8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		04E74E4D21D8E284006E7067 /* 327906B2-83BE-4B7C-A01C-5467966F160F.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "327906B2-83BE-4B7C-A01C-5467966F160F.png"; sourceTree = "<group>"; };
-		04E74E4E21D8E3E8006E7067 /* 3FBD8507-E805-4E5E-BE56-E562498299CC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3FBD8507-E805-4E5E-BE56-E562498299CC.png"; sourceTree = "<group>"; };
+		04687C1721D9EECD00028F9C /* Swap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Swap.cpp; sourceTree = "<group>"; };
+		04687C1821D9EECD00028F9C /* Swap.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Swap.hpp; sourceTree = "<group>"; };
+		04E74E5821D90B42006E7067 /* 045-模板 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "045-模板"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E74E5B21D90B42006E7067 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		04B5607521D8DD7400AB9BE8 /* Frameworks */ = {
+		04E74E5521D90B42006E7067 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,96 +41,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04B5606F21D8DD7400AB9BE8 = {
+		04E74E4F21D90B42006E7067 = {
 			isa = PBXGroup;
 			children = (
-				04B5607A21D8DD7400AB9BE8 /* 044-仿函数 */,
-				04B5607921D8DD7400AB9BE8 /* Products */,
+				04E74E5A21D90B42006E7067 /* 045-模板 */,
+				04E74E5921D90B42006E7067 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		04B5607921D8DD7400AB9BE8 /* Products */ = {
+		04E74E5921D90B42006E7067 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				04B5607821D8DD7400AB9BE8 /* 044-仿函数 */,
+				04E74E5821D90B42006E7067 /* 045-模板 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		04B5607A21D8DD7400AB9BE8 /* 044-仿函数 */ = {
+		04E74E5A21D90B42006E7067 /* 045-模板 */ = {
 			isa = PBXGroup;
 			children = (
-				04E74E4E21D8E3E8006E7067 /* 3FBD8507-E805-4E5E-BE56-E562498299CC.png */,
-				04E74E4D21D8E284006E7067 /* 327906B2-83BE-4B7C-A01C-5467966F160F.png */,
-				04B5607B21D8DD7400AB9BE8 /* main.cpp */,
+				04E74E5B21D90B42006E7067 /* main.cpp */,
+				04687C1721D9EECD00028F9C /* Swap.cpp */,
+				04687C1821D9EECD00028F9C /* Swap.hpp */,
 			);
-			path = "044-仿函数";
+			path = "045-模板";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		04B5607721D8DD7400AB9BE8 /* 044-仿函数 */ = {
+		04E74E5721D90B42006E7067 /* 045-模板 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04B5607F21D8DD7400AB9BE8 /* Build configuration list for PBXNativeTarget "044-仿函数" */;
+			buildConfigurationList = 04E74E5F21D90B42006E7067 /* Build configuration list for PBXNativeTarget "045-模板" */;
 			buildPhases = (
-				04B5607421D8DD7400AB9BE8 /* Sources */,
-				04B5607521D8DD7400AB9BE8 /* Frameworks */,
-				04B5607621D8DD7400AB9BE8 /* CopyFiles */,
+				04E74E5421D90B42006E7067 /* Sources */,
+				04E74E5521D90B42006E7067 /* Frameworks */,
+				04E74E5621D90B42006E7067 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "044-仿函数";
-			productName = "044-仿函数";
-			productReference = 04B5607821D8DD7400AB9BE8 /* 044-仿函数 */;
+			name = "045-模板";
+			productName = "045-模板";
+			productReference = 04E74E5821D90B42006E7067 /* 045-模板 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		04B5607021D8DD7400AB9BE8 /* Project object */ = {
+		04E74E5021D90B42006E7067 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = mac;
 				TargetAttributes = {
-					04B5607721D8DD7400AB9BE8 = {
+					04E74E5721D90B42006E7067 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 04B5607321D8DD7400AB9BE8 /* Build configuration list for PBXProject "044-仿函数" */;
+			buildConfigurationList = 04E74E5321D90B42006E7067 /* Build configuration list for PBXProject "045-模板" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 04B5606F21D8DD7400AB9BE8;
-			productRefGroup = 04B5607921D8DD7400AB9BE8 /* Products */;
+			mainGroup = 04E74E4F21D90B42006E7067;
+			productRefGroup = 04E74E5921D90B42006E7067 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				04B5607721D8DD7400AB9BE8 /* 044-仿函数 */,
+				04E74E5721D90B42006E7067 /* 045-模板 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		04B5607421D8DD7400AB9BE8 /* Sources */ = {
+		04E74E5421D90B42006E7067 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04B5607C21D8DD7400AB9BE8 /* main.cpp in Sources */,
+				04687C1921D9EECD00028F9C /* Swap.cpp in Sources */,
+				04E74E5C21D90B42006E7067 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		04B5607D21D8DD7400AB9BE8 /* Debug */ = {
+		04E74E5D21D90B42006E7067 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -188,7 +190,7 @@
 			};
 			name = Debug;
 		};
-		04B5607E21D8DD7400AB9BE8 /* Release */ = {
+		04E74E5E21D90B42006E7067 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -240,7 +242,7 @@
 			};
 			name = Release;
 		};
-		04B5608021D8DD7400AB9BE8 /* Debug */ = {
+		04E74E6021D90B42006E7067 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -248,7 +250,7 @@
 			};
 			name = Debug;
 		};
-		04B5608121D8DD7400AB9BE8 /* Release */ = {
+		04E74E6121D90B42006E7067 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -259,25 +261,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		04B5607321D8DD7400AB9BE8 /* Build configuration list for PBXProject "044-仿函数" */ = {
+		04E74E5321D90B42006E7067 /* Build configuration list for PBXProject "045-模板" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				04B5607D21D8DD7400AB9BE8 /* Debug */,
-				04B5607E21D8DD7400AB9BE8 /* Release */,
+				04E74E5D21D90B42006E7067 /* Debug */,
+				04E74E5E21D90B42006E7067 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04B5607F21D8DD7400AB9BE8 /* Build configuration list for PBXNativeTarget "044-仿函数" */ = {
+		04E74E5F21D90B42006E7067 /* Build configuration list for PBXNativeTarget "045-模板" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				04B5608021D8DD7400AB9BE8 /* Debug */,
-				04B5608121D8DD7400AB9BE8 /* Release */,
+				04E74E6021D90B42006E7067 /* Debug */,
+				04E74E6121D90B42006E7067 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 04B5607021D8DD7400AB9BE8 /* Project object */;
+	rootObject = 04E74E5021D90B42006E7067 /* Project object */;
 }
